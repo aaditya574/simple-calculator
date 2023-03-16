@@ -18,7 +18,7 @@ function process(key){
     else if(key == 'BK'){
         let string = document.querySelector('.screen').value;
         if(undefs.includes(string)) string  = "";
-        else string = string.substring(0, str.length - 1);
+        else string = string.substring(0, string.length - 1);
         document.querySelector('.screen').value = string;
     }
     else if(key == 'EV'){
