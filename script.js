@@ -15,10 +15,10 @@ function process(key){
         let string = "";
         document.querySelector('.screen').value = string;
     }
-    else if(key == 'BK'){
+    else if(key == 'BS'){
         let string = document.querySelector('.screen').value;
         if(undefs.includes(string)) string  = "";
-        else string = string.substring(0, string.length - 1);
+        else string = string.slice(0, -1);
         document.querySelector('.screen').value = string;
     }
     else if(key == 'EV'){
